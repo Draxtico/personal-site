@@ -14,7 +14,7 @@ module.exports = withPlugins(
   ],
   {
     reactStrictMode: true,
-    basePath: "/personal-site",
-    assetPrefix: "/personal-site",
+    basePath: process.env.NODE_ENV === "production" ? "/personal-site" : "",
+    assetPrefix: process.env.NODE_ENV === "production" ? "/personal-site" : "",
   }
 );
