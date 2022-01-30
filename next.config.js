@@ -14,5 +14,7 @@ module.exports = withPlugins(
   ],
   {
     reactStrictMode: true,
+    basePath: "/personal-site",
+    assetPrefix: "/personal-site",
   }
 );
